@@ -7,7 +7,7 @@ The Append class (main()) takes as input a raw twitter json document collection 
 class KeyMatch is used to initialize various 'topics' and their keywords - which is then used to classify every single tweet as one of the five topics.
 
 Regular Expressions are used to fish out emojis and url contents from the tweet_text.
-Emojis and special charaters are represented by unicode surrogate pairs, and the regex includes all such unicode pairs to match emojis in a tweet text field.
+Emojis and special charaters are represented by unicode surrogate pairs, and the regex includes all such unicode pairs to match emojis in a tweet text field (ref: http://instagram-engineering.tumblr.com/post/118304328152/emojineering-part-2-implementing-hashtag-emoji).
 
 text_xx (where xx is the ISO-639-1 language code) is used to store the language specific tweet text. This is used as the indexed field in Apache Solr.
 
